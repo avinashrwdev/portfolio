@@ -6,16 +6,15 @@ import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { Mail } from 'lucide-react'
 
-import { motion, spring } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { Fade } from 'react-awesome-reveal';
 import { useSectionInView } from '@/lib/useInView';
-import { useActiveSectionContext } from '@/container/active-section';
+
 
 export default function Intro() {
 
   const { ref } = useSectionInView("#home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return(
     <section ref={ref} id='home' className='mb-28 max-w-[75rem] text-center sm:mb-0'>

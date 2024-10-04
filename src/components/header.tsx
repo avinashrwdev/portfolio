@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Link } from "@/lib/types";
 import { useActiveSectionContext } from "@/container/active-section";
 
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 
 type HeaderProps = {links: Link[]};
 
